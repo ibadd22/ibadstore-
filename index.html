@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Store - Toko Akun Mobile Legends Terpercaya & Garansi Full</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        ml: {
+                            bg: ',
+                            card: '#121824',
+                            border: '#1f293d',
+                            gold: '#fbbf24',
+                            goldDark: '#d97706',
+                            accent: '#6366f1',
+                            cyan: '#06b6d4',
+                            purple: '#a855f7'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Orbitron', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0e17;
+            color: #f3f4f6;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .glow-gold {
+            box-shadow: 0 0 20px rgba(251, 191, 36, 0.25);
+        }
+        .glow-cyan {
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.25);
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px -10px rgba(99, 102, 241, 0.3);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0e17;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1f293d;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #fbbf24;
+        }
+    </style>
+</head>
+<body class="bg-ml-bg text-gray-100 min-h-screen flex flex-col selection:bg-ml-gold selection:text-black">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-40 bg-ml-bg/90 backdrop-blur-md border-b border-ml-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-ml-gold to-amber-600 flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid me-0.5 fa-crown text-gray-950 text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-heading font-extrabold text-xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-ml-gold to-yellow-500">
+                        MYTHIC<span class="text-indigo-400">STORE</span>
+                    </span>
+                    <span class="block text-[10px] text-gray-400 font-semibold tracking-widest uppercase">Jual Beli Akun MLBB</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#hero" class="text-ml-gold transition-colors">Beranda</a>
+                <a href="#katalog" class="text-gray-300 hover:text-ml-gold transition-colors">Katalog Akun</a>
+                <a href="#fitur" class="text-gray-300 hover:text-ml-gold transition-colors">Keunggulan</a>
+                <a href="#testimoni" class="text-gray-300 hover:text-ml-gold transition-colors">Testimoni</a>
+                <a href="#faq" class="text-gray-300 hover:text-ml-gold transition-colors">FAQ</a>
+            </nav>
+
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://wa.me/6283159080429?text=Halo%20Admin,%20saya%20ingin%20tanya%20seputar%20akun%20MLBB" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-400 border border-emerald-500/40 font-semibold text-sm flex items-center gap-2 transition-all hover:shadow-lg hover:shadow-emerald-900/30">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Hubungi Admin</span>
+                </a>
+            </div>
+
+            <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg text-gray-300 hover:text-white hover:bg-ml-card focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-ml-card border-b border-ml-border px-4 pt-2 pb-6 space-y-3">
+            <a href="#hero" class="mobile-nav-link block py-2 text-ml-gold font-medium">Beranda</a>
+            <a href="#katalog" class="mobile-nav-link block py-2 text-gray-300 hover:text-ml-gold font-medium">Katalog Akun</a>
+            <a href="#fitur" class="mobile-nav-link block py-2 text-gray-300 hover:text-ml-gold font-medium">Keunggulan</a>
+            <a href="#testimoni" class="mobile-nav-link block py-2 text-gray-300 hover:text-ml-gold font-medium">Testimoni</a>
+            <a href="#faq" class="mobile-nav-link block py-2 text-gray-300 hover:text-ml-gold font-medium">FAQ</a>
+            <a href="https://wa.me/6283159080429?text=Halo%20Admin" target="_blank" class="w-full mt-2 py-3 rounded-xl bg-emerald-600 text-white font-semibold text-center flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Admin
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative py-16 md:py-24 overflow-hidden border-b border-ml-border">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-10 right-10 w-80 h-80 bg-amber-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-shield-halved"></i> 100% Garansi Anti Hackback (HB)
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Toko Akun <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-ml-gold to-yellow-500">Mobile Legends</span> Sultan & Aman.
+                    </h1>
+                    <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal">
+                        Dapatkan akun MLBB impian dengan Skin Collector, KoF, Prime, dan Rank Mythic hingga Immortal. Transaksi cepat 5–10 menit, data lengkap & legal 100%.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#katalog" class="px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-gray-950 font-bold text-base shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+                            <i class="fa-solid fa-gamepad"></i> Lihat Akun Ready
+                        </a>
+                        <a href="https://wa.me/6283159080429?text=Halo%20Admin,%20saya%20mau%20konsultasi%20akun" target="_blank" class="px-8 py-4 rounded-xl bg-ml-card hover:bg-ml-border border border-ml-border text-gray-200 font-semibold text-base transition-all flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i> Konsultasi Admin
+                        </a>
+                    </div>
+
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-ml-border/60 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="font-heading font-bold text-xl text-amber-400">1,500+</p>
+                            <p class="text-xs text-gray-400">Akun Terjual</p>
+                        </div>
+                        <div>
+                            <p class="font-heading font-bold text-xl text-indigo-400">100%</p>
+                            <p class="text-xs text-gray-400">Garansi Toko</p>
+                        </div>
+                        <div>
+                            <p class="font-heading font-bold text-xl text-emerald-400">5 Min</p>
+                            <p class="text-xs text-gray-400">Proses Cepat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase Highlight Banner Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="w-full max-w-md bg-ml-card border border-ml-border rounded-2xl p-5 shadow-2xl relative group overflow-hidden">
+                        <div class="absolute -top-12 -right-12 w-32 h-32 bg-amber-500/20 rounded-full blur-2xl"></div>
+                        <div class="relative rounded-xl overflow-hidden bg-slate-900 border border-ml-border mb-4">
+                            <canvas id="heroBadgeCanvas" width="400" height="200" class="w-full h-auto block"></canvas>
+                            <div class="absolute top-3 right-3 bg-red-600 text-white font-bold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider shadow">
+                                HOT DEAL
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-bold text-lg text-white group-hover:text-ml-gold transition-colors">Akun Glory maybeee #ML-001</h3>
+                                    <p class="text-xs text-gray-400">Mythical Glory (71 Stars) • ID: 956602430</p>
+                                </div>
+                                <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">READY</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs text-gray-300 py-1">
+                                <span class="bg-ml-bg px-2.5 py-1 rounded border border-ml-border"><i class="fa-solid fa-gamepad text-amber-400"></i> 9,214 Match</span>
+                                <span class="bg-ml-bg px-2.5 py-1 rounded border border-ml-border"><i class="fa-solid fa-heart text-indigo-400"></i> 2,720 Like</span>
+                                <span class="bg-ml-bg px-2.5 py-1 rounded border border-ml-border"><i class="fa-solid fa-shield text-emerald-400"></i> K10 KLOCK</span>
+                            </div>
+                            <div class="pt-3 border-t border-ml-border flex items-center justify-between">
+                                <div>
+                                    <span class="text-xs text-gray-400 line-through">Rp 2.500.000</span>
+                                    <p class="text-xl font-extrabold text-ml-gold font-heading">Rp 1.850.000</p>
+                                </div>
+                                <button onclick="openDetailModal(1)" class="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-colors flex items-center gap-1.5">
+                                    <i class="fa-solid fa-eye"></i> Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BADGES BAR -->
+    <section class="py-8 bg-ml-card/50 border-b border-ml-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-3 flex items-center justify-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400 text-lg">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <div class="text-left">
+                        <h4 class="text-sm font-bold text-gray-200">Garansi Full Anti-HB</h4>
+                        <p class="text-xs text-gray-400">Jaminan 100% uang kembali</p>
+                    </div>
+                </div>
+                <div class="p-3 flex items-center justify-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-lg">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="text-left">
+                        <h4 class="text-sm font-bold text-gray-200">Proses Instant</h4>
+                        <p class="text-xs text-gray-400">Akun terkirim 5-10 menit</p>
+                    </div>
+                </div>
+                <div class="p-3 flex items-center justify-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-lg">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <div class="text-left">
+                        <h4 class="text-sm font-bold text-gray-200">Admin Terverifikasi</h4>
+                        <p class="text-xs text-gray-400">Rekber resmi & trusted</p>
+                    </div>
+                </div>
+                <div class="p-3 flex items-center justify-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-lg">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <div class="text-left">
+                        <h4 class="text-sm font-bold text-gray-200">Metode Lengkap</h4>
+                        <p class="text-xs text-gray-400">QRIS, E-Wallet, Bank</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CATALOG SECTION -->
+    <section id="katalog" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-white tracking-wide">
+                    KATALOG <span class="text-ml-gold">AKUN READY</span>
+                </h2>
+                <p class="text-gray-400 text-sm mt-1">Pilih akun Mobile Legends favoritmu dengan kualitas terbaik dan aman.</p>
+            </div>
+            <div id="accountCount" class="text-sm font-semibold text-indigo-400 bg-indigo-500/10 px-3 py-1.5 rounded-lg border border-indigo-500/20 w-fit">
+                Menampilkan 6 Akun
+            </div>
+        </div>
+
+        <!-- SEARCH & FILTER BAR -->
+        <div class="bg-ml-card border border-ml-border rounded-2xl p-4 sm:p-6 mb-10 shadow-xl space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                    <input type="text" id="searchInput" placeholder="Cari Kode, Hero, Skin (Contoh: Collector)..." class="w-full bg-ml-bg border border-ml-border rounded-xl pl-10 pr-4 py-2.5 text-sm text-gray-200 focus:outline-none focus:border-ml-gold transition-colors placeholder:text-gray-500">
+                </div>
+
+                <div>
+                    <select id="rankFilter" class="w-full bg-ml-bg border border-ml-border rounded-xl px-4 py-2.5 text-sm text-gray-200 focus:outline-none focus:border-ml-gold transition-colors">
+                        <option value="ALL">Semua Rank</option>
+                        <option value="Immortal">Mythical Immortal</option>
+                        <option value="Glory">Mythical Glory</option>
+                        <option value="Mythic">Mythic</option>
+                        <option value="Legend">Legend</option>
+                        <option value="Epic">Epic</option>
+                    </select>
+                </div>
+
+                <div>
+                    <select id="priceFilter" class="w-full bg-ml-bg border border-ml-border rounded-xl px-4 py-2.5 text-sm text-gray-200 focus:outline-none focus:border-ml-gold transition-colors">
+                        <option value="ALL">Semua Harga</option>
+                        <option value="under500">&lt; Rp 500.000</option>
+                        <option value="500-1000">Rp 500rb - Rp 1 Juta</option>
+                        <option value="1000-2000">Rp 1 Juta - Rp 2 Juta</option>
+                        <option value="above2000">&gt; Rp 2 Juta</option>
+                    </select>
+                </div>
+
+                <div>
+                    <select id="sortBy" class="w-full bg-ml-bg border border-ml-border rounded-xl px-4 py-2.5 text-sm text-gray-200 focus:outline-none focus:border-ml-gold transition-colors">
+                        <option value="default">Urutkan: Terbaru</option>
+                        <option value="price-asc">Harga: Terendah -> Tertinggi</option>
+                        <option value="price-desc">Harga: Tertinggi -> Terendah</option>
+                        <option value="skins-desc">Skin Terbanyak</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-end gap-3 pt-2">
+                <button id="resetFilters" class="text-xs text-gray-400 hover:text-ml-gold transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-arrows-rotate"></i> Reset Filter
+                </button>
+            </div>
+        </div>
+
+        <div id="accountsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+        <div id="emptyState" class="hidden py-16 text-center">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-ml-card border border-ml-border flex items-center justify-center text-gray-500 text-2xl">
+                <i class="fa-solid fa-magnifying-glass-minus"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-300">Akun tidak ditemukan</h3>
+            <p class="text-xs text-gray-500 mt-1">Coba atur ulang kata kunci pencarian atau filter harga/rank Anda.</p>
+        </div>
+    </section>
+
+    <!-- ADVANTAGES / FEATURES SECTION -->
+    <section id="fitur" class="py-16 bg-ml-card/30 border-y border-ml-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-white">
+                    MENGAPA HARUS BELI DI <span class="text-ml-gold">MYTHICSTORE?</span>
+                </h2>
+                <p class="text-gray-400 text-sm mt-2">Sistem keandalan & proteksi berlapis untuk kenyamanan transaksi game Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-ml-card border border-ml-border rounded-2xl p-6 relative group hover:border-amber-500/50 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-cat"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Garansi Penuh Anti-HB</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Setiap transaksi dilengkapi surat pernyataan garansi resmi. Apabila terjadi kendala Hackback pada akun, tim kami akan melakukan refund 100% tanpa potongan.
+                    </p>
+                </div>
+
+                <div class="bg-ml-card border border-ml-border rounded-2xl p-6 relative group hover:border-indigo-500/50 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Data Clean & Unbind All</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Seluruh akun yang kami jual dijamin Unbind All (Kosong dari kaitan pihak ketiga seperti TikTok, VK, FB) dan siap untuk dikaitkan ke email milik pembeli.
+                    </p>
+                </div>
+
+                <div class="bg-ml-card border border-ml-border rounded-2xl p-6 relative group hover:border-emerald-500/50 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Panduan Pemasangan Akun</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Bingung cara ganti Moonton / amankan akun? Customer service kami siap membantu dan memandu step-by-step sampai akun 100% aman di HP Anda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimoni" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-white">
+                TESTIMONI & <span class="text-ml-gold">BUKTI TRANSAKSI</span>
+            </h2>
+            <p class="text-gray-400 text-sm mt-2">Kepuasan pembeli adalah prioritas utama kami. Berikut adalah tanggapan nyata dari para gamer.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-ml-card border border-ml-border rounded-2xl p-5 flex flex-col justify-between space-y-4">
+                <div class="space-y-2">
+                    <div class="flex text-amber-400 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-gray-300 italic">
+                        "Fast respon banget adminnya! Baru bayar via QRIS gak nyampe 5 menit data Moonton langsung dikirim & dibantu amankan sampe beres. Recommended Toko Akun ML!"
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 pt-3 border-t border-ml-border">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-purple-500 to-indigo-500 flex items-center justify-center font-bold text-xs">
+                        R
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">Rizky Ramadhan</h4>
+                        <p class="text-[10px] text-emerald-400">Membeli Akun Mythic Glory (#ML-002)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-ml-card border border-ml-border rounded-2xl p-5 flex flex-col justify-between space-y-4">
+                <div class="space-y-2">
+                    <div class="flex text-amber-400 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-gray-300 italic">
+                        "Awalnya agak ragu beli akun online, tapi pas dijelasin garansi HB full 100% langsung mantep. Akun sesuai foto skin Collector Gusion mantap!"
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 pt-3 border-t border-ml-border">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-500 flex items-center justify-center font-bold text-xs">
+                        B
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">Bagus S.</h4>
+                        <p class="text-[10px] text-emerald-400">Membeli Akun Immortal (#ML-001)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-ml-card border border-ml-border rounded-2xl p-5 flex flex-col justify-between space-y-4">
+                <div class="space-y-2">
+                    <div class="flex text-amber-400 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-gray-300 italic">
+                        "Proses unbind cepet, admin ramah dan jujur kalau ada minus di dijelasin dari awal. Top bgt pokoknya MythicStore!"
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 pt-3 border-t border-ml-border">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 to-red-500 flex items-center justify-center font-bold text-xs">
+                        F
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">Fajar N.</h4>
+                        <p class="text-[10px] text-emerald-400">Membeli Akun Legend (#ML-004)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-16 bg-ml-card/30 border-t border-ml-border">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-white">
+                    PERTANYAAN UMUM <span class="text-ml-gold">(FAQ)</span>
+                </h2>
+                <p class="text-gray-400 text-sm mt-2">Hal-hal yang sering ditanyakan oleh calon pembeli.</p>
+            </div>
+
+            <div class="space-y-3" id="faqAccordion">
+                <div class="bg-ml-card border border-ml-border rounded-xl overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-sm text-gray-200 flex justify-between items-center hover:text-ml-gold transition-colors focus:outline-none">
+                        <span>Bagaimana sistem transaksi pembelian akun di MythicStore?</span>
+                        <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs text-gray-400 leading-relaxed border-t border-ml-border/40 pt-3">
+                        Pilih akun yang Anda inginkan di katalog, klik tombol "Beli Sekarang", dan Anda akan diarahkan ke WhatsApp Admin. Lakukan pembayaran via QRIS/E-Wallet/Bank. Setelah pembayaran terverifikasi, Admin akan memberikan data akun dan memandu Amankan Akun secara penuh.
+                    </div>
+                </div>
+
+                <div class="bg-ml-card border border-ml-border rounded-xl overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-sm text-gray-200 flex justify-between items-center hover:text-ml-gold transition-colors focus:outline-none">
+                        <span>Apakah akun yang dijual aman dari Hackback (HB)?</span>
+                        <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs text-gray-400 leading-relaxed border-t border-ml-border/40 pt-3">
+                        Sangat aman. Semua akun di mythicstore sudah melewati tahap verifikasi kepemilikan dan identitas penjual pertama. Kami memberikan Garansi Full 100% Pengembalian Uang jika terjadi HB.
+                    </div>
+                </div>
+
+                <div class="bg-ml-card border border-ml-border rounded-xl overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-sm text-gray-200 flex justify-between items-center hover:text-ml-gold transition-colors focus:outline-none">
+                        <span>Apa itu status 'Monsep' dan 'All Unbind'?</span>
+                        <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs text-gray-400 leading-relaxed border-t border-ml-border/40 pt-3">
+                        'Monsep' artinya Moonton Sepaket (Email moonton diberikan ke pembeli beserta email utamanya). 'All Unbind' artinya akun sosial media terkait seperti TikTok, Facebook, dan VK sudah kosong dan dapat dikaitkan ke akun sosmed Anda sendiri.
+                    </div>
+                </div>
+
+                <div class="bg-ml-card border border-ml-border rounded-xl overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-sm text-gray-200 flex justify-between items-center hover:text-ml-gold transition-colors focus:outline-none">
+                        <span>Metode pembayaran apa saja yang tersedia?</span>
+                        <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-xs text-gray-400 leading-relaxed border-t border-ml-border/40 pt-3">
+                        Kami menerima pembayaran melalui QRIS (All Payment/Semua e-wallet & Mobile Banking), DANA, OVO, GoPay, ShopeePay, Bank BCA, Mandiri, BRI, dan BNI.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-ml-bg border-t border-ml-border py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-3 md:col-span-1">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-ml-gold flex items-center justify-center text-black font-bold">
+                            <i class="fa-solid fa-crown text-xs"></i>
+                        </div>
+                        <span class="font-heading font-bold text-lg text-white">MYTHICSTORE</span>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Platform penyedia akun Mobile Legends: Bang Bang berkualitas, garansi aman anti-hb, dan terpercaya di Indonesia.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-3">Navigasi</h4>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li><a href="#hero" class="hover:text-ml-gold transition-colors">Beranda</a></li>
+                        <li><a href="#katalog" class="hover:text-ml-gold transition-colors">Katalog Akun</a></li>
+                        <li><a href="#fitur" class="hover:text-ml-gold transition-colors">Keunggulan Layanan</a></li>
+                        <li><a href="#testimoni" class="hover:text-ml-gold transition-colors">Testimoni Pembeli</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-3">Pembayaran Supported</h4>
+                    <div class="flex flex-wrap gap-2 text-xs text-gray-400">
+                        <span class="px-2 py-1 bg-ml-card border border-ml-border rounded">QRIS</span>
+                        <span class="px-2 py-1 bg-ml-card border border-ml-border rounded">DANA</span>
+                        <span class="px-2 py-1 bg-ml-card border border-ml-border rounded">OVO</span>
+                        <span class="px-2 py-1 bg-ml-card border border-ml-border rounded">GoPay</span>
+                        <span class="px-2 py-1 bg-ml-card border border-ml-border rounded">BCA</span>
+                        <span class="px-2 py-1 bg-ml-card border border-ml-border rounded">Mandiri</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-white mb-3">Hubungi Kami</h4>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-emerald-400"></i> +62 831-5908-0429</li>
+                        <li class="flex items-center gap-2"><i class="fa-brands fa-instagram text-pink-400"></i> @mythicstore_mlbb</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-clock text-indigo-400"></i> Jam Operasional: 08:00 - 23:00 WIB</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-ml-border/60 text-center text-xs text-gray-500">
+                <p>&copy; 2026 MythicStore MLBB. All rights reserved. Disclaimer: Website ini tidak terafiliasi resmi dengan Moonton Games.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ACCOUNT DETAIL MODAL -->
+    <div id="detailModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-ml-card border border-ml-border w-full max-w-3xl rounded-2xl overflow-hidden shadow-2xl relative max-h-[90vh] flex flex-col my-auto">
+            
+            <div class="p-4 sm:p-5 border-b border-ml-border flex items-center justify-between bg-ml-bg/60">
+                <div>
+                    <span id="modalCode" class="text-xs font-bold text-indigo-400 uppercase tracking-widest">KODE: #ML-000</span>
+                    <h3 id="modalTitle" class="text-lg sm:text-xl font-bold font-heading text-white">Detail Akun MLBB</h3>
+                </div>
+                <button onclick="closeDetailModal()" class="w-8 h-8 rounded-lg bg-ml-border text-gray-400 hover:text-white flex items-center justify-center focus:outline-none">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div class="p-4 sm:p-6 overflow-y-auto space-y-6">
+                <!-- Preview Image / Canvas container -->
+                <div class="rounded-xl overflow-hidden border border-ml-border bg-slate-900 relative flex justify-center items-center">
+                    <canvas id="modalBadgeCanvas" width="600" height="250" class="w-full h-auto block"></canvas>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                    <div class="bg-ml-bg p-3 rounded-xl border border-ml-border text-center">
+                        <span class="text-[10px] text-gray-400 uppercase font-semibold">Rank Saat Ini</span>
+                        <p id="modalRank" class="text-sm font-bold text-amber-400 font-heading">Mythic</p>
+                    </div>
+                    <div class="bg-ml-bg p-3 rounded-xl border border-ml-border text-center">
+                        <span class="text-[10px] text-gray-400 uppercase font-semibold">Total Like</span>
+                        <p id="modalWR" class="text-sm font-bold text-emerald-400 font-heading">2,720</p>
+                    </div>
+                    <div class="bg-ml-bg p-3 rounded-xl border border-ml-border text-center">
+                        <span class="text-[10px] text-gray-400 uppercase font-semibold">Total Pertandingan</span>
+                        <p id="modalSkinsCount" class="text-sm font-bold text-indigo-400 font-heading">9,214</p>
+                    </div>
+                    <div class
